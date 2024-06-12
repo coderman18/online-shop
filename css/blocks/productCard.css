@@ -1,0 +1,26 @@
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.photosImage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.product__title {
+  color: aliceblue;
+}
+
+.product__text {
+  color: aliceblue;
+}
+
+.product__price {
+  color: white;
+}

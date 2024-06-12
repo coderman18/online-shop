@@ -1,0 +1,55 @@
+/* header */
+.header {
+}
+
+.header__row {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header__content {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 670px;
+  
+}
+
+.header__title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 72px;
+  font-weight: normal;
+  line-height: 96px;
+  color: white;
+}
+
+.header__text {
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 60px;
+  color: white;
+}
+
+.header__btn {
+
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 5px;
+  font-size: 26px;
+  line-height: 1;
+  font-style: normal;
+  font-weight: normal;
+  background-color: crimson;
+  padding: 10px 15px;
+  text-align: center;
+  color: aliceblue;
+}
+
+.header__fhoto {
+
+}
