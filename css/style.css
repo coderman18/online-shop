@@ -2,12 +2,14 @@
 @import "./blocks/header.css";
 @import "./blocks/featured.css";
 @import "./blocks/productCard.css";
+@import "./blocks/writer.css";
+@import "./blocks/footer.css";
 
 *, *::after, *::before {
   box-sizing: border-box;
 }
 
-a, ul, li, button {
+a, ul, li, button, footer {
   text-decoration: none;
 }
 

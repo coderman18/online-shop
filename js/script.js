@@ -44,3 +44,5 @@ import { URL } from "./util.js";
 
         // Вызов функции при загрузке страницы
         window.onload = fetchUsers;
+
+// writer
