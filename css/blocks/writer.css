@@ -1,0 +1,13 @@
+.out::after {
+  content: '|';
+  font-weight: bold;
+  padding: 0 1px;
+  animation-name: cursor1;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes cursor1 {
+  50% {color: black;}
+}

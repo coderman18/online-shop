@@ -46,3 +46,31 @@ import { URL } from "./util.js";
         window.onload = fetchUsers;
 
 // writer
+const str = "В нашем магазине Вы всегда найдете товар по Вашему вкусу и по Вашим возможностям!";
+const out = document.querySelector('.out');
+
+let position = 0;
+
+const typeText = () => {
+  if (position === str.length) return;
+  const v = getRandomInt(1, 100);
+  if (v > 90 && position !== 0) {
+    out.textContent += str[getRandomInt(0, str.length - 2)];
+    setTimeout(removeLastChar, 1000);
+  }  else {
+    out.textContent += str[position];
+    position++;
+    setTimeout(typeText, getRandomInt());
+  }
+}
+
+const removeLastChar = () => {
+  out.textContent = str.substring(0, position);
+  setTimeout(typeText, getRandomInt());
+}
+function getRandomInt(min = 15, max = 350) {
+  let rand = min + Math.random() * (max + 1 - min);
+  return Math.floor(rand);
+}
+
+typeText();
