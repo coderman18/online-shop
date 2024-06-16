@@ -32,7 +32,7 @@
             <a href="#" class="nav__link">Комментарии</a>
           </li>
           <li class="nav__item">
-            <a href="/contacts.html" class="nav__link">Контакты</a>
+            <a href="#" class="nav__link">Контакты</a>
           </li>
         </ul>
         <div class="nav__cart">
@@ -49,7 +49,7 @@
     <div class="container">
       <div class="header__row">
         <div class="header__content">
-          <h1 class="header__title">Онлайн магазин товаров</h1>
+          <h1 class="header__title">Наши контакты</h1>
           <div class="header__text">
             <p class="out">
 
@@ -68,18 +68,23 @@
   </header>
 
   <main>
-    <section class="featured">
+    <section class="mailer">
       <div class="container">
-        <div class="section-header">
-          <h2 class="section-header__title">New Product</h2>
-          <div class="section-header__description">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <form class="form" id="form" autocomplete="off">
+        <div class="form__title">
+          <h2 class="form__title-text">Обратная связь</h2>
+        </div>
+          <div class="form__input-box">
+            <input class="form__input-inp" type="text" id="name" name="name" placeholder="Введите ваше имя:" autocomplete="off">
           </div>
-        </div>
-        <div class="product-card" id="users-container">
-          <span class="preload">Мы загружаем контент...</span>
-
-        </div>
+          <div class="form__input-box">
+            <input class="form__input-inp" type="tel" id="tel" name="tel" placeholder="Ваш номер телефона:" autocomplete="off">
+          </div>
+          <div class="form__input-box" class="form__input-box">
+            <textarea class="form__input-inp" name="msg" id="msg" placeholder="Ваше сообщение:"></textarea>
+          </div>
+          <button class="form__btn" type="submit">Отправить сообщение</button>
+        </form>
       </div>
     </section>
   </main>
@@ -100,6 +105,9 @@
       <p class="footer__content">All Rights Reserved | Kaliningrad @2024</p>
     </div>
   </footer>
+
+  <script src="js/inputmask.min.js"></script>
+  <script src="js/just-validate.min.js"></script>
   <script type="module" src="js/script.js"></script>
 </body>
 

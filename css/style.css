@@ -4,6 +4,8 @@
 @import "./blocks/productCard.css";
 @import "./blocks/writer.css";
 @import "./blocks/footer.css";
+@import "./blocks/slider.css";
+@import "./blocks/mailer.css";
 
 *, *::after, *::before {
   box-sizing: border-box;
